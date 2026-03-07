@@ -1,0 +1,55 @@
+# tleap input template for protein-ligand system setup
+# Used in step 4 of md_simulation_workflow.ipynb
+#
+# Force fields used in this study:
+#   Protein : ff19SB  (Ref: He et al., J. Chem. Theory Comput. 2020, 16, 2024-2034)
+#   Ligand  : GAFF2   (Ref: Wang et al., J. Comput. Chem. 2004, 25, 1157-1174)
+#   Water   : TIP3P   (Ref: Jorgensen et al., J. Chem. Phys. 1983, 79, 926-935)
+#
+# Placeholders:
+#   {FF}           - protein force field leaprc (e.g., leaprc.protein.ff19SB)
+#   {WATER}        - water model leaprc (e.g., leaprc.water.tip3p)
+#   {WATER_BOX}    - water box type (e.g., TIP3PBOX)
+#   {LIGAND_MOL2}  - path to ligand.mol2 (GAFF2-parameterized)
+#   {LIGAND_FRCMOD}- path to ligand.frcmod
+#   {LIG_LIB}      - path to lig.lib
+#   {PROTEIN_LIG}  - path to combined protein+ligand PDB
+#   {SYS_NW_PDB}   - output: no-water system PDB
+#   {SYS_NW_TOP}   - output: no-water AMBER topology
+#   {SYS_NW_CRD}   - output: no-water AMBER coordinates
+#   {SYS_PDB}      - output: solvated system PDB
+#   {SYS_TOP}      - output: solvated AMBER topology
+#   {SYS_CRD}      - output: solvated AMBER coordinates
+#   {BOX_SIZE}     - solvation box padding in Angstroms (12 used in this study)
+#   {POS_ION}      - positive ion type (Na+ for NaCl)
+#   {NUM_ION}      - number of ion pairs for 0.15 M concentration
+
+source {FF}
+source leaprc.DNA.OL15
+source leaprc.RNA.OL3
+source leaprc.GLYCAM_06j-1
+source leaprc.gaff2
+source {WATER}
+
+loadamberparams {LIGAND_FRCMOD}
+loadoff {LIG_LIB}
+
+SYS = loadpdb {PROTEIN_LIG}
+alignaxes SYS
+check SYS
+charge SYS
+
+addions SYS {POS_ION} 0
+addions SYS Cl- 0
+check SYS
+charge SYS
+
+savepdb SYS {SYS_NW_PDB}
+saveamberparm SYS {SYS_NW_TOP} {SYS_NW_CRD}
+
+solvatebox SYS {WATER_BOX} {BOX_SIZE} 0.7
+addIonsRand SYS {POS_ION} {NUM_ION} Cl- {NUM_ION}
+
+saveamberparm SYS {SYS_TOP} {SYS_CRD}
+savepdb SYS {SYS_PDB}
+quit

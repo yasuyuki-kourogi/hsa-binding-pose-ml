@@ -1,0 +1,20 @@
+{
+  "title": "HSA Binding Pose Identification with Machine Learning",
+  "description": "Code and curated datasets for reproducible SI table generation and external validation outputs in the HSA binding pose ML study.",
+  "creators": [
+    {
+      "name": "Kourogi, Yasuyuki"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "human serum albumin",
+    "machine learning",
+    "docking",
+    "molecular dynamics",
+    "lightgbm",
+    "reproducibility"
+  ],
+  "upload_type": "software",
+  "access_right": "open"
+}

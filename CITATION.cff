@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "HSA Binding Pose Identification with Machine Learning"
+message: "If you use this repository, please cite the software and related article."
+type: software
+authors:
+  - family-names: "Kourogi"
+    given-names: "Yasuyuki"
+license: MIT
+repository-code: "https://github.com/yasuyuki-kourogi/hsa-binding-pose-ml"
+abstract: "Code and curated datasets for reproducible SI table generation and external validation outputs in an HSA binding pose machine learning study."
+keywords:
+  - human serum albumin
+  - machine learning
+  - docking
+  - molecular dynamics
+  - lightgbm
+  - reproducibility

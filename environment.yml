@@ -1,0 +1,85 @@
+name: hsa-binding-pose-ml
+# Reproducibility environment for:
+#   "Dynamic Stability–Driven Machine Learning Improves Binding Pose
+#    Identification on Human Serum Albumin"
+#
+# Tested on: Linux (x86_64), CUDA 12.4, Python 3.10
+#
+# Platform notes:
+#   - ambertools (conda-forge) is Linux-only.
+#     macOS users: install AMBERTools 23 separately from https://ambermd.org
+#   - openmm CUDA platform requires a CUDA-capable GPU and CUDA ≥ 12.
+#     CPU/OpenCL platforms work without a GPU.
+#   - pytraj, lightgbm, optuna, pdb4amber are installed via pip (see pip section).
+#
+# Usage:
+#   conda env create -f environment.yml
+#   conda activate hsa-binding-pose-ml
+
+channels:
+  - conda-forge
+  - nvidia
+  - defaults
+
+dependencies:
+  # ── Python ────────────────────────────────────────────────────────────
+  - python=3.10.17
+
+  # ── Core scientific Python ────────────────────────────────────────────
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - scipy=1.15.2
+  - scikit-learn=1.6.1
+  - statsmodels=0.14.4
+
+  # ── Machine learning ──────────────────────────────────────────────────
+  - shap=0.48.0         # SHAP feature importance
+
+  # ── Cheminformatics ───────────────────────────────────────────────────
+  - rdkit=2024.03.5
+  - openbabel=3.1.1     # ligand protonation (obabel)
+
+  # ── MD simulation (OpenMM workflow) ──────────────────────────────────
+  - openmm=8.2.0
+  - openff-toolkit=0.16.9
+  - openff-forcefields=2024.09.0
+  - openff-interchange=0.4.2
+  - parmed=4.3.0
+
+  # ── AMBERTools (Linux only via conda-forge) ───────────────────────────
+  # Provides: antechamber, parmchk2, tleap, cpptraj, pdb4amber
+  # macOS: install AMBERTools 23 separately from https://ambermd.org
+  - ambertools=23.6
+
+  # ── MD trajectory analysis ────────────────────────────────────────────
+  - mdanalysis=2.9.0
+  - mdtraj=1.10.3
+  - biopandas=0.5.1
+  - prolif=2.0.3        # ligand interaction networks
+  - netcdf4=1.7.2
+
+  # ── Visualization ────────────────────────────────────────────────────
+  - matplotlib=3.10.3
+  - seaborn=0.13.2
+  - py3dmol=2.4.2
+  - ipywidgets=8.1.7
+
+  # ── Jupyter ───────────────────────────────────────────────────────────
+  - jupyter=1.1.1
+  - jupyterlab=4.4.3
+  - ipykernel=6.29.5
+
+  # ── Utilities ─────────────────────────────────────────────────────────
+  - tqdm=4.67.1
+  - openpyxl=3.1.5      # Excel/CSV compatibility (utf-8-sig output)
+  - biopython=1.85
+
+  # ── pip-only packages ─────────────────────────────────────────────────
+  - pip
+  - pip:
+      - lightgbm==4.6.0         # gradient boosting (main ML model)
+      - optuna==4.5.0           # hyperparameter optimization
+      - pytraj==2.0.6           # AMBER trajectory analysis (requires ambertools)
+      - pdb4amber==22.0         # PDB preparation for AMBER
+      - scikit-posthocs==0.11.4 # post-hoc statistical tests
+      - xgboost==3.0.4          # gradient boosting (comparison model)

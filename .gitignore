@@ -1,0 +1,33 @@
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Large intermediate files (excluded from public archive)
+*.rst
+*.prmtop
+*.inpcrd
+*.mdout*
+*.mdcrd*
+*.frcmod
+*.mol2
+*.lib
+**/MMPBSA_igb_2/
+
+# Exception: deposited representative example GAFF2 files
+!data/example/**/*.frcmod
+!data/example/**/*.mol2
+!data/example/**/*.lib
+!data/example/**/*.prmtop
+!data/example/**/*.crd
+
+# Large workflow directories
+analysis/trajectories/
+data/gnina/completed/
+data/trajectories/
+predict/input/archive/
+predict/output/archive/

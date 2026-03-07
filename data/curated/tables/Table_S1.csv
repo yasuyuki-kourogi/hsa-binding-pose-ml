@@ -1,0 +1,60 @@
+﻿﻿PDB ID,Chain,Ligand,Crystal Pose ID,Binding site,Resolution (Å),Usage
+1E7A,A,PFL,1,IIIA (Site II),2.2,Training
+1E7A,A,PFL,2,IIIB,2.2,Training
+1E7B,A,HLT,1,IIA–IIB,2.38,Training
+1E7B,A,HLT,2,IIA–IIB,2.38,Training
+1E7B,A,HLT,3,IIIA (Site II),2.38,Training
+1HK1,A,T44,1,IIA (Site I),2.65,Training
+1HK1,A,T44,2,IIIA (Site II),2.65,Training
+1HK1,A,T44,3,IIIB,2.65,Training
+1HK1,A,T44,4,IIIB,2.65,Training
+2BX8,A,AZQ,1,IIA (Site I),2.7,Training
+2BX8,A,AZQ,2,IB (Site III),2.7,Training
+2BXA,A,C1F,1,IIA (Site I),2.35,Training
+2BXA,A,C1F,2,IIIA (Site II),2.35,Training
+2BXB,A,OPB,1,IIA (Site I),3.2,Training
+2BXC,A,P1Z,1,IIA (Site I),3.1,Training
+2BXD,A,RWF,1,IIA (Site I),3.05,Training
+2BXE,A,1FL,1,IIIA (Site II),2.95,Training
+2BXE,A,1FL,2,IIA–IIB,2.95,Training
+2BXE,A,1FL,3,IIA (Site I),2.95,Training
+2BXF,A,DZP,1,IIIA (Site II),2.95,Training
+2BXG,A,IBP,1,IIIA (Site II),2.7,Training
+2BXG,A,IBP,2,IIA–IIB,2.7,Training
+2BXH,A,IOS,1,IIIA (Site II),2.25,Training
+2BXH,A,IOS,2,IIA (Site I),2.25,Training
+2BXH,A,IOS,3,IIA (Site I),2.25,Training
+2VUE,A,BLA,1,IB (Site III),2.42,Training
+2VUF,A,FUA,1,IB (Site III),3.05,Training
+2VUF,A,FUA,2,IIIB,3.05,Training
+2XVQ,A,9DS,1,IIIA (Site II),2.9,Training
+2XVU,A,9DN,1,IIA (Site I),2.6,Training
+2XVU,A,9DN,2,IIIA (Site II),2.6,Training
+2YDF,A,IO3,1,IIA (Site I),2.75,Training
+2YDF,A,IO3,2,IIIA (Site II),2.75,Training
+2YDF,A,IO3,3,IB (Site III),2.75,Training
+2YDF,A,IO3,4,IIIA–IIIB,2.75,Training
+3LU6,A,IMX,1,IIA (Site I),2.7,Training
+3LU6,A,IMX,2,IIA–IIB,2.7,Training
+3LU7,A,IPX,1,IIA (Site I),2.8,Training
+3LU8,A,IQX,1,IB (Site III),2.6,Training
+4L9K,A,EHF,1,IB (Site III),2.4,Training
+4L9Q,A,9TP,1,IB (Site III),2.7,Training
+4LA0,A,198,1,IB (Site III),2.4,Training
+5UJB,A,6AK,1,IB (Site III),2.7,Training
+5YOQ,A,CLT,1,IIIA (Site II),2.65,Training
+6A7P,A,9SC,1,IIIA (Site II),2.28,Training
+6R7S,A,SAS,1,IIA (Site I),2.21,Training
+6R7S,A,SAS,2,IIIA–IIIB,2.21,Training
+6R7S,A,SAS,3,IIIB,2.21,Training
+7D6J,A,R75,1,IIIA (Site II),3.29,Training
+7D6J,A,R75,2,IIA (Site I),3.29,Training
+7D6J,A,R75,3,IB (Site III),3.29,Training
+7D6J,A,R75,4,IB (Site III),3.29,Training
+7X7X,A,AJW,1,IIIA (Site II),2.1,Training
+8VAE,A,SAL,1,IIIA (Site II),3.7,Training
+8VAE,A,SAL,2,IIA (Site I),3.7,Training
+8VAE,A,SAL,3,IB (Site III),3.7,Training
+9KQK,B,A1EGK,1,IIIA–IIIB,3.05,Training
+9UPD,A,A1L9H,1,IIIA (Site II),2.8,External validation
+9UPD,B,A1L9H,2,IIIA (Site II),2.8,External validation
