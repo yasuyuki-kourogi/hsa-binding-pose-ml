@@ -1,5 +1,7 @@
 # HSA Binding Pose Identification with Machine Learning
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18900096.svg)](https://doi.org/10.5281/zenodo.18900096)
+
 Machine-learning framework that incorporates dynamic stability features extracted from short molecular dynamics (MD) simulations to improve binding pose identification on human serum albumin (HSA). Time-dependent interaction patterns in MD trajectories—such as contact persistence, distance fluctuations, and interaction energy variability—are systematically quantified as machine-learnable features and combined with docking scores and ligand descriptors to discriminate crystal-like poses from false positives.
 
 ## Repository layout
@@ -66,7 +68,7 @@ conda activate hsa-binding-pose-ml
 
 ## Citation
 
-Code and curated datasets are archived in Zenodo. DOI will be added after deposition.
+Code and curated datasets are archived in Zenodo: [10.5281/zenodo.18900096](https://doi.org/10.5281/zenodo.18900096)
 
 ## Third-party notice
 
