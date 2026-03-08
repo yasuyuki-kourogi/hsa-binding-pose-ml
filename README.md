@@ -1,6 +1,6 @@
 # HSA Binding Pose Identification with Machine Learning
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18900096.svg)](https://doi.org/10.5281/zenodo.18900096)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18900095.svg)](https://doi.org/10.5281/zenodo.18900095)
 
 Machine-learning framework that incorporates dynamic stability features extracted from short molecular dynamics (MD) simulations to improve binding pose identification on human serum albumin (HSA). Time-dependent interaction patterns in MD trajectories—such as contact persistence, distance fluctuations, and interaction energy variability—are systematically quantified as machine-learnable features and combined with docking scores and ligand descriptors to discriminate crystal-like poses from false positives.
 
@@ -21,6 +21,8 @@ Machine-learning framework that incorporates dynamic stability features extracte
 - `01_add_descriptors.ipynb` – `09_shap_local_explanation.ipynb`: analysis pipeline (see `notebooks/README.md`)
 - `gnina_docking_workflow.ipynb`: GNINA docking workflow (10 poses/complex, whole-protein autobox)
 - `md_simulation_workflow.ipynb`: MD simulation workflow (OpenMM + AMBER ff19SB/GAFF2/TIP3P, 5 ns NPT)
+
+**GNINA docking seeds:** The default random seed was 123. For 5 of the 31 training complexes, no crystal-like pose was obtained with this seed; alternative seeds were used: 2BXB (1), 3LU7 (1234), 4LA0 (12), 7D6J (1), 9KQK (1234).
 
 **Not included** (due to file size): full MD trajectories, raw docking intermediates, GAFF2 parameters for all complexes. A representative trajectory for 1E7A pose01 is deposited in Zenodo.
 
@@ -59,6 +61,30 @@ Some CSV files and notebooks use abbreviated prefixes that correspond to feature
 | `ds_md` | DockF+MDF |
 | `ds_desc_md` | DockF+LigF+MDF |
 
+## Computational environment
+
+Results in the paper were produced on the following environment:
+
+| Component | Version |
+|---|---|
+| OS | Ubuntu 24.04 LTS (WSL2 on Windows 11) |
+| GPU | NVIDIA RTX 5080 / RTX 4070 |
+| CUDA | 13.1 |
+| Python | 3.10.17 |
+| OpenMM | 8.2.0 |
+| GNINA | 1.3.2 |
+| AmberTools | 22 |
+| RDKit | 2024.03.5 |
+| LightGBM | 4.6.0 |
+| scikit-learn | 1.6.1 |
+| Optuna | 4.5.0 |
+| pytraj | 2.0.6 |
+| MDAnalysis | 2.9.0 |
+| ProLIF | 2.0.3 |
+| Open Babel | 3.1.1 |
+
+A mixed-precision model was employed for MD simulations. Full dependency details are in `environment.yml`.
+
 ## Setup
 
 ```bash
@@ -68,7 +94,7 @@ conda activate hsa-binding-pose-ml
 
 ## Citation
 
-Code and curated datasets are archived in Zenodo: [10.5281/zenodo.18900096](https://doi.org/10.5281/zenodo.18900096)
+Code and curated datasets are archived in Zenodo: [10.5281/zenodo.18900095](https://doi.org/10.5281/zenodo.18900095)
 
 ## Third-party notice
 
