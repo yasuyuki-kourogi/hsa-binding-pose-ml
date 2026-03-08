@@ -7,9 +7,9 @@ authors:
     given-names: "Yasuyuki"
 license: MIT
 repository-code: "https://github.com/yasuyuki-kourogi/hsa-binding-pose-ml"
-doi: "10.5281/zenodo.18900096"
-version: "1.0.0"
-date-released: "2026-03-07"
+doi: "10.5281/zenodo.18908391"
+version: "1.0.1"
+date-released: "2026-03-08"
 abstract: "Code and curated datasets for reproducible SI table generation and external validation outputs in an HSA binding pose machine learning study."
 keywords:
   - human serum albumin
