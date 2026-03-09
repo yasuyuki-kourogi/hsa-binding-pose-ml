@@ -69,11 +69,11 @@ Results in the paper were produced on the following environment:
 |---|---|
 | OS | Ubuntu 24.04 LTS (WSL2 on Windows 11) |
 | GPU | NVIDIA RTX 5080 / RTX 4070 |
-| CUDA | 13.1 |
+| CUDA | 12.4 |
 | Python | 3.10.17 |
 | OpenMM | 8.2.0 |
 | GNINA | 1.3.2 |
-| AmberTools | 22 |
+| AmberTools | 23.6 |
 | RDKit | 2024.03.5 |
 | LightGBM | 4.6.0 |
 | scikit-learn | 1.6.1 |
@@ -103,5 +103,6 @@ Parts of the MD workflow were adapted from [making-it-rain](https://github.com/p
 ## License
 
 MIT License (see `LICENSE`). Third-party notices in `THIRD_PARTY_NOTICES.md`.
+
 
 
