@@ -44,11 +44,12 @@ Machine-learning framework that incorporates dynamic stability features extracte
 12. SHAP local explanation     -> notebooks/09_shap_local_explanation.ipynb
 ```
 
-External tools required for the upstream workflow:
+### Core software
 
-- [GNINA](https://github.com/gnina/gnina) (docking)
-- [AMBERTools >= 23](https://ambermd.org/GetAmber.php) (antechamber, tleap, cpptraj)
-- [OpenBabel >= 3.1](https://openbabel.org/) (ligand protonation)
+- **GNINA 1.3.2** — docking (installed separately)
+- **OpenMM 8.2.0** — molecular dynamics simulations
+
+The workflow is centered on GNINA for docking and OpenMM for MD simulations. Additional preprocessing, parameterization, and analysis dependencies are listed in `environment.yml`.
 
 ## Column name mapping
 
@@ -103,6 +104,7 @@ Parts of the MD workflow were adapted from [making-it-rain](https://github.com/p
 ## License
 
 MIT License (see `LICENSE`). Third-party notices in `THIRD_PARTY_NOTICES.md`.
+
 
 
 
