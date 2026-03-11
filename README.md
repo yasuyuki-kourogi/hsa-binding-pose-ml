@@ -72,17 +72,17 @@ Results in the paper were produced on the following environment:
 | GPU | NVIDIA RTX 5080 / RTX 4070 |
 | CUDA | 12.4 |
 | Python | 3.10.17 |
-| OpenMM | 8.2.0 |
 | GNINA | 1.3.2 |
+| OpenMM | 8.2.0 |
 | AmberTools | 23.6 |
-| RDKit | 2024.03.5 |
 | LightGBM | 4.6.0 |
-| scikit-learn | 1.6.1 |
-| Optuna | 4.5.0 |
-| pytraj | 2.0.6 |
 | MDAnalysis | 2.9.0 |
-| ProLIF | 2.0.3 |
 | Open Babel | 3.1.1 |
+| Optuna | 4.5.0 |
+| ProLIF | 2.0.3 |
+| pytraj | 2.0.6 |
+| RDKit | 2024.03.5 |
+| scikit-learn | 1.6.1 |
 
 A mixed-precision model was employed for MD simulations. Full dependency details are in `environment.yml`.
 
@@ -104,6 +104,7 @@ Parts of the MD workflow were adapted from [making-it-rain](https://github.com/p
 ## License
 
 MIT License (see `LICENSE`). Third-party notices in `THIRD_PARTY_NOTICES.md`.
+
 
 
 
