@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "HSA Binding Pose Identification with Machine Learning"
+message: "If you use this repository, please cite the software and related article."
+type: software
+authors:
+  - family-names: "Kourogi"
+    given-names: "Yasuyuki"
+license: MIT
+repository-code: "https://github.com/yasuyuki-kourogi/hsa-binding-pose-ml"
+doi: "10.5281/zenodo.22721650"
+version: "1.0.3"
+date-released: "2026-09-12"
+abstract: "An executable GNINA--MD--LightGBM workflow for identifying human serum albumin ligand binding poses from docking scores and molecular-dynamics-derived dynamic-stability features."

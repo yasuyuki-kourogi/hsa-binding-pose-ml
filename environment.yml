@@ -1,0 +1,34 @@
+name: hsa-md
+channels:
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.10
+  - numpy=1.26
+  - pandas=2.2
+  - rdkit=2024.03.5
+  - openmm=8.2
+  - pdbfixer=1.11
+  - ambertools=23.6
+  - openbabel=3.1.1
+  - mdanalysis=2.9
+  - prolif=2.0
+  # ProLIF 2.0 requires pkg_resources, removed from newer setuptools releases.
+  - setuptools<81
+  - parmed=4.3
+  # Add the conda environment's lib directory to the external GNINA binary RPATH.
+  - patchelf
+  # GNINA v1.3.2 binary runtime (the NVIDIA driver is installed separately)
+  - cudnn=9
+  - nvidia::cuda-cudart=12.4
+  - nvidia::cuda-nvtx=12.4
+  - nvidia::libcublas=12.4
+  - nvidia::libcufft=11.2
+  - nvidia::libcusolver=11.6
+  - nvidia::libcusparse=12.3
+  - pip
+  - pip:
+      - biotite==1.2.0
+      - dimorphite-dl==2.0.2
+      - hydride==1.2.3
+      - lightgbm==4.6.0

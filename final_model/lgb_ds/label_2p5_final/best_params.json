@@ -1,0 +1,17 @@
+{
+  "learning_rate": 0.1650963272753398,
+  "max_depth": 8,
+  "num_leaves": 147,
+  "feature_fraction": 0.891646435281256,
+  "bagging_fraction": 0.6934594657105371,
+  "bagging_freq": 1,
+  "min_data_in_leaf": 13,
+  "lambda_l1": 9.650382293503283e-08,
+  "lambda_l2": 8.033325003562948e-05,
+  "min_gain_to_split": 0.5448443032921094,
+  "max_bin": 371,
+  "n_estimators": 816,
+  "n_estimators_used": 10,
+  "n_estimators_proposed": 816,
+  "optuna_best_value(ap_mean_cv)": 0.7736578484605774
+}

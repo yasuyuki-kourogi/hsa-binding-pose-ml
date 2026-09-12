@@ -1,0 +1,13 @@
+# Runtime-generated workflow outputs (including MD trajectories)
+runs/
+
+# Local documentation and generated files not included in the public release
+README_ja.md
+__pycache__/
+*.py[cod]
+*:Zone.Identifier
+.DS_Store
+Thumbs.db
+
+# GNINA binary downloaded by the installation instructions
+gnina.1.3.2

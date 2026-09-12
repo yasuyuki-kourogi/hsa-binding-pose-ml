@@ -1,0 +1,10 @@
+{
+  "n_samples": 310,
+  "n_features": 65,
+  "n_groups": 31,
+  "n_estimators_used": 23,
+  "oof_auc": 0.8497894879804427,
+  "oof_pr_auc": 0.7666736855790262,
+  "bestF1_threshold": 0.3939981512896761,
+  "bestF1_oof": 0.7372881355932204
+}
