@@ -8,6 +8,10 @@ This repository is the public implementation of the HSA binding-pose identificat
 
 Kourogi Y, et al. *Dynamic stability–driven machine learning improves binding pose identification on human serum albumin*. Journal of Computer-Aided Molecular Design 40, 118 (2026). https://doi.org/10.1007/s10822-026-00824-3
 
+## Archived Runtime Outputs
+
+Complete runtime outputs from the verified v1.0.3 example execution are available from Zenodo: https://doi.org/10.5281/zenodo.22721650
+
 This repository contains Python code for running the workflow. It was reconstructed as an easy-to-run command-line workflow based on a series of Jupyter Notebooks developed during the research. Codex (GPT-5.6 Sol) was used for code development and debugging, and the developers performed test runs.
 
 ## Support Policy
